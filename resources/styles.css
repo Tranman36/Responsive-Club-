@@ -1,0 +1,444 @@
+html {
+    font-size: 16px;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marvel', sans-serif; 
+    font-weight: bold; 
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 680px) {
+   
+    h2,h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    h2,h3,p {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    html,body {
+        overflow-x: hidden;
+    }
+}
+
+/*nav bar*/
+
+header .logo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 5rem;
+    width: 100%; 
+    background-color: crimson;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+    position: fixed;
+    z-index: 2; 
+    border-bottom: 1px solid white;
+}
+
+.logo-img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .marvel {
+    text-decoration: none;
+    color: white;
+    font-family: 'Marvel', sans-serif; 
+    font-weight: bold; 
+    font-size: 2rem;  
+}
+
+header nav ul {
+    display: flex;
+    flex-shrink: 1; 
+    justify-content: space-between;
+    gap: 1rem; 
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem; 
+    color: red;  
+    border: 1px solid black; 
+    padding: 0.5rem; 
+    border-radius: 10px; 
+    background-color: white;
+    flex-shrink: 0; 
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    transition: 1.0s; 
+}
+
+@media only screen and (max-width: 865px) {
+
+    header .logo {
+        font-size: 0.75rem;
+        padding-left: 0.5rem; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        position: fixed; 
+    }
+
+    header .logo {
+        font-size: 0.75rem; 
+        padding: 0; 
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: none; 
+    }
+} 
+/*Banner*/
+
+.banner {
+    background-image: url('./images/marvel-fan-club.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
+    height: 40rem; 
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: column;
+    border-bottom: 1px solid white; 
+}
+
+.join-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.join-button a {
+    color: red; 
+    font-size: 2rem;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: white
+}
+
+.join-button a:hover {
+    cursor: pointer;
+    background: transparent; 
+}
+
+@media only screen and (max-width: 480px) {
+
+    .banner {
+        max-width: 100%;
+        height: 350px;
+        background-size: cover; 
+    }    
+
+    .join-button a {
+        font-size: 0.75rem;   
+    }
+}
+
+/*About Us*/
+
+.about-us-container {
+    background-image: url('./images/marvel-banner.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    width: 100%; 
+    display: flex; 
+}
+
+.about-us-content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    line-height: 5rem;
+}
+
+/* Avenger Heroes */
+
+#heroes-section {
+    width: 100%; 
+    border-bottom: 1px solid black;
+}
+
+#heroes-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem; 
+    color: purple;
+}
+
+.avengers-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    max-height: 100%; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    flex: 0 0 auto;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 100px; 
+    font-size: 1rem;
+}
+
+.avenger-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 15rem;
+    height: 22rem;  
+}
+
+
+#captain-america {
+    background-image: url('./images/captainamerica.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#iron-man {
+    background-image: url('./images/ironman.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#thor {
+    background-image: url('./images/thor.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hulk {
+    background-image: url('./images/hulk.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#black-widow {
+    background-image: url('./images/blackwidow.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hawkeye {
+    background-image: url('./images/hawkeye.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avengers-container .content {
+    color: white;
+    background-color: red; 
+    height: 20%; 
+    width: 100%;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+.content h2 a:hover {
+    cursor: pointer;
+    color: blue;
+    transition: 1s;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #heroes-section {
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .avengers-container {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    
+    .avenger-img {
+        width: 15rem;
+        height: 22rem; 
+    }
+    
+    .content a {
+        font-size: 1.25rem;
+    }
+    
+}
+/* Group Meetup */
+
+#group-title {
+    width: 100%;
+    height: 40rem; 
+    border-bottom: 1px solid black;
+}
+
+#group-title h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1rem; 
+}
+
+.group-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
+    max-width: 100%; 
+}
+
+.group-container .group-box {
+    border: 1px solid black; 
+    height: 20rem;
+    width: 85%; 
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -1px 0 10px #000000;
+    margin-top: 1.5rem; 
+    padding: 1rem; 
+    gap: 2rem; 
+    flex: 0 0 auto; 
+}
+
+.group-container .group-img {
+    display: flex;
+    align-items: center;
+}
+
+.group-container .group-img img {
+    max-height: 90%;
+    max-width: 450px;    
+}
+
+.group-container .group-description {
+    display: flex; 
+    flex-direction: column;
+    max-height: 100%; 
+    overflow: scroll; 
+}
+
+.group-description h2 {
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #group-title {
+        border-bottom: none;
+    }
+
+    .group-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .group-container .group-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85%; 
+    }
+
+    .group-container .group-img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .group-container .group-description {
+        font-size: 0.75rem; 
+    } 
+}
+
+
+/*Contact*/
+
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10rem; 
+    padding: 3rem 5%;
+    font-size: 1.5rem; 
+    border-bottom: 1px solid black;
+}
+
+  @media only screen and (max-width: 480) {
+    
+    #contact-section {
+        font-size: 1.25rem; 
+    }
+  }
+/* Footer Main */ 
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1.5rem; 
+    color: white;
+    background-color: crimson;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .footer-main p {
+        font-size: 0.75rem;
+    }
+}
